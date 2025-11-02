@@ -133,6 +133,12 @@ def load_lstm_model():
         model_path_keras = config.MODEL_DIR / 'best_model.keras'
         model_path_h5 = config.MODEL_DIR / 'best_model.h5'
         
+        # DEBUG: Print paths being checked
+        st.sidebar.info(f"🔍 Looking for models in: {config.MODEL_DIR}")
+        st.sidebar.info(f"📂 Dir exists: {config.MODEL_DIR.exists()}")
+        if config.MODEL_DIR.exists():
+            st.sidebar.info(f"📄 Files: {list(config.MODEL_DIR.glob('*'))}")
+        
         model_path = model_path_keras if model_path_keras.exists() else model_path_h5
         
         scaler_X_path = config.MODEL_DIR / 'scaler_X.pkl'
