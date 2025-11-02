@@ -1,0 +1,29 @@
+{
+  "feature_columns": [
+    "temperature_c",
+    "humidity_percent",
+    "wind_speed_mps",
+    "pressure_hpa",
+    "cloud_cover",
+    "precipitation_mm",
+    "hour",
+    "day_of_week",
+    "month",
+    "is_weekend",
+    "is_holiday",
+    "is_diwali",
+    "is_crop_burning_season",
+    "aqi_lag_1h",
+    "aqi_lag_2h",
+    "aqi_lag_3h",
+    "aqi_lag_6h",
+    "aqi_lag_12h",
+    "aqi_lag_24h",
+    "aqi_rolling_mean_24h",
+    "aqi_rolling_std_24h",
+    "aqi_rolling_max_24h",
+    "temp_humidity_interaction"
+  ],
+  "sequence_length": 72,
+  "forecast_horizon": 24
+}
